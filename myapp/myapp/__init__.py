@@ -12,7 +12,7 @@ mongo=MongoEngine(app)
 
 MONGODB_SETTINGS={
     'db':'local',
-    'host':'localhost',
+    'host':'mongo',
     'port':27017
 }
 

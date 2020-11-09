@@ -3,6 +3,10 @@ from .models import *
 from myapp import app
 from bson import ObjectId
 
+@app.route('/', methods=['GET'])
+def home():
+    return '<h1>Salut</h1>'
+
 
 @app.route('/api/posts/create', methods=['POST'])
 def create_post():
